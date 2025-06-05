@@ -10,6 +10,8 @@ public class TelaInicial extends Application {
 
     @Override
     public void start(Stage stage) {
+        System.out.println("Tigrano ON");
+
         Button btnProduto = new Button("Cadastrar Produto");
         Button btnComprador = new Button("Cadastrar Comprador");
         Button btnAdmin = new Button("Cadastrar Admin");
@@ -49,7 +51,7 @@ public class TelaInicial extends Application {
         VBox layout = new VBox(20, btnAdmin, btnProduto, btnComprador, btnSuporte);
         layout.setStyle("-fx-padding: 20; -fx-alignment: center;");
 
-        Scene scene = new Scene(layout, 300, 200);
+        Scene scene = new Scene(layout, 600, 600);
         stage.setTitle("Tigrano - Tela Inicial");
         stage.setScene(scene);
         stage.show();

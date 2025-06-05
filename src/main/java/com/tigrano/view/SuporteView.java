@@ -16,7 +16,6 @@ public class SuporteView extends Application {
 
     @Override
     public void start(Stage stage) {
-        System.out.println("Tigrano ON");
 
         TextField assuntoField = new TextField();
         TextField descricaoField = new TextField();

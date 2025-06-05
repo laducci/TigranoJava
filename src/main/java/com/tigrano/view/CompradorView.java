@@ -15,8 +15,6 @@ public class CompradorView extends Application {
 
     @Override
     public void start(Stage stage) {
-        System.out.println("Tigrano ON");
-
         TextField emailField = new TextField();
         TextField nomeField = new TextField();
         TextField idadeField = new TextField();

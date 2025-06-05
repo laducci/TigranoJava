@@ -16,7 +16,6 @@ public class ProdutoView extends Application {
 
     @Override
     public void start(Stage stage) {
-        System.out.println("Tigrano ON");
 
         TextField nomeField = new TextField();
         TextField categoriaField = new TextField();
