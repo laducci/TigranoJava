@@ -34,6 +34,11 @@ public class Produto implements Serializable {
 
     @Override
     public String toString() {
-        return nome + " (" + categoria + ") - R$" + preco + (ativo ? " [Ativo]" : " [Inativo]");
+        return String.format("Nome: %s | Categoria: %s | Preço: R$%.2f | Status: %s",
+                nome,
+                categoria,
+                preco,
+                ativo ? "Ativo" : "Inativo"
+        );
     }
 }
