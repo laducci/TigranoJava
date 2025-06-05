@@ -41,6 +41,6 @@ public class ProdutoController {
     }
 
     private void salvar() {
-        Persistencia.salvar(produtos, caminhoArquivo);
+        Persistencia.salvar(new java.util.ArrayList<>(produtos), caminhoArquivo);
     }
 }

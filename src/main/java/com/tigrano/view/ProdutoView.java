@@ -16,7 +16,7 @@ public class ProdutoView extends Application {
 
     @Override
     public void start(Stage stage) {
-        System.out.println("🚀 Tigrano está no ar...");
+        System.out.println("Tigrano ON");
 
         TextField nomeField = new TextField();
         TextField categoriaField = new TextField();
@@ -47,7 +47,7 @@ public class ProdutoView extends Application {
                     );
                     controller.adicionarProduto(novoProduto);
                     mostrarAlerta(Alert.AlertType.INFORMATION, "Produto criado com sucesso!");
-                    System.out.println("✅ Produto criado com sucesso: " + novoProduto.getNome());
+                    System.out.println("Produto criado com sucesso: " + novoProduto.getNome());
                     limparCampos(nomeField, categoriaField, descricaoField, precoField, ativoCheck);
                 } catch (Exception ex) {
                     mostrarAlerta(Alert.AlertType.ERROR, "Erro ao adicionar produto.");
@@ -70,7 +70,7 @@ public class ProdutoView extends Application {
                         );
                         controller.atualizarProduto(index, atualizado);
                         mostrarAlerta(Alert.AlertType.INFORMATION, "Produto editado com sucesso!");
-                        System.out.println("✏️ Produto editado: " + atualizado.getNome());
+                        System.out.println("Produto editado: " + atualizado.getNome());
                         limparCampos(nomeField, categoriaField, descricaoField, precoField, ativoCheck);
                         listaProdutos.getSelectionModel().clearSelection();
                     } catch (Exception ex) {
@@ -87,7 +87,7 @@ public class ProdutoView extends Application {
             if (selecionado != null) {
                 controller.removerProduto(selecionado);
                 mostrarAlerta(Alert.AlertType.INFORMATION, "Produto removido com sucesso!");
-                System.out.println("🗑️ Produto removido: " + selecionado.getNome());
+                System.out.println("Produto removido: " + selecionado.getNome());
                 limparCampos(nomeField, categoriaField, descricaoField, precoField, ativoCheck);
                 listaProdutos.getSelectionModel().clearSelection();
             } else {
