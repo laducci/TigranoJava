@@ -12,6 +12,7 @@ public class TelaInicial extends Application {
     public void start(Stage stage) {
         Button btnProduto = new Button("Cadastrar Produto");
         Button btnComprador = new Button("Cadastrar Comprador");
+        Button btnAdmin = new Button("Cadastrar Admin");
 
         btnProduto.setOnAction(e -> {
             try {
@@ -29,7 +30,15 @@ public class TelaInicial extends Application {
             }
         });
 
-        VBox layout = new VBox(20, btnProduto, btnComprador);
+        btnAdmin.setOnAction(e -> {
+            try {
+                new AdminView().start(new Stage());
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        });
+
+        VBox layout = new VBox(20, btnAdmin, btnProduto, btnComprador);
         layout.setStyle("-fx-padding: 20; -fx-alignment: center;");
 
         Scene scene = new Scene(layout, 300, 200);
