@@ -15,7 +15,6 @@ public class AdminView extends Application {
 
     @Override
     public void start(Stage stage) {
-        System.out.println("Tigrano ON - Admin");
 
         TextField idField = new TextField();
         TextField nomeField = new TextField();
