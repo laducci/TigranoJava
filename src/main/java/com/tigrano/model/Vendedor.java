@@ -47,6 +47,4 @@ public class Vendedor implements Serializable {
     public String toString() {
         return String.format("Nome: %s | Email: %s | Idade: %d", nome, email, idade);
     }
-
-}
 }

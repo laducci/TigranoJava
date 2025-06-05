@@ -30,18 +30,20 @@ public class VendedorController {
         salvar();
     }
 
-    public void atualizarVendedor(int index, Comprador vendedorAtualizado) {
+    public void atualizarVendedor(int index, Vendedor vendedorAtualizado) {
         vendedores.set(index, vendedorAtualizado);
         salvar();
     }
 
     public ObservableList<Vendedor> listarVendedores() {
-    return vendedores;
-}
+        return vendedores;
+    }
 
     private void salvar() {
-    Persistencia.salvar(new java.util.ArrayList<>(vendedores), caminhoArquivo);
+        Persistencia.salvar(new java.util.ArrayList<>(vendedores), caminhoArquivo);
+    }
 }
+
 
 
 
